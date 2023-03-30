@@ -18,8 +18,8 @@ function! VisualStarSearchSet(cmdtype,...)
 endfunction
 
 " replace vim's built-in visual * and # behavior
-xnoremap * :<C-u>call VisualStarSearchSet('/')<CR>/<C-R>=@/<CR><CR>
-xnoremap # :<C-u>call VisualStarSearchSet('?')<CR>?<C-R>=@/<CR><CR>
+xnoremap Y :<C-u>call VisualStarSearchSet('/')<CR>/<C-R>=@/<CR><CR>
+xnoremap X :<C-u>call VisualStarSearchSet('?')<CR>?<C-R>=@/<CR><CR>
 
 " recursively vimgrep for word under cursor or selection
 if maparg('<leader>*', 'n') == ''
